@@ -1,0 +1,56 @@
+package aqer;
+class Animal {
+	String name;
+	int age;
+	void display() {
+		System.out.println("This is an Animal");
+	}
+}
+class Dog extends Animal {
+	String c;
+	void show() {
+		System.out.println("This is a Dog");
+	}
+}
+class Cat extends Animal {
+	double weight;
+	void view() {
+		System.out.println("This is a Cat");
+	}
+}
+
+public class Hier {
+   public static void main(String[] args) {
+	   Dog ob=new Dog();
+	   ob.show();
+	   ob.display();
+	   ob.name="Tommy";
+	   ob.age=2;
+	   ob.c="black";
+	   System.out.println("name of the dog is " +ob.name);
+	   System.out.println("it's age is " +ob.age+" years");
+	   System.out.println("it's colour is "+ob.c);
+	   Cat obj=new Cat();
+	   obj.view();
+	   obj.display();
+	   obj.name="Kitty";
+	   obj.age=3;
+	   obj.weight=2.5;
+       System.out.println("name of the cat is "+obj.name);
+	   System.out.println("it's age is "+obj.age+" years");
+	   System.out.println("it's weight is "+obj.weight);
+	   
+   }
+}
+
+Output:-
+This is a Dog
+This is an Animal
+name of the dog is Tommy
+it's age is 2 years
+it's colour is black
+This is a Cat
+This is an Animal
+name of the cat is Kitty
+it's age is 3 years
+it's weight is 2.5
