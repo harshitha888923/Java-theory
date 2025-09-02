@@ -1,0 +1,37 @@
+package aqer;
+class Father{
+	int age;
+	String name;
+	void display() {
+		System.out.println("Welcome");
+	}
+}
+class Son extends Father{
+	Double weight;
+}
+public class Single {
+	public static void main(String[] args) {
+		Father fa=new Father();
+		Son so=new Son();
+		fa.display();
+		fa.age=45;
+		fa.name="ram";
+		so.age=12;
+		so.name="raju";
+		so.weight=34.9;
+		System.out.println("age of father is " +fa.age);
+		System.out.println("name of father is " +fa.name);
+		System.out.println("age of son is " +so.age);
+		System.out.println("name of son is " +so.name);
+		System.out.println("weight of son " +so.weight);
+	}
+
+}
+
+Output:-
+Welcome
+age of father is 45
+name of father is ram
+age of son is 12
+name of son is raju
+weight of son 34.9
