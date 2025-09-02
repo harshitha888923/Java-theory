@@ -1,0 +1,66 @@
+package aqer;
+class Work {
+    String name;
+    int salary; 
+    public void data() {
+        System.out.println("Hello Everyone");
+    }
+}
+class Manager extends Work {
+    int age;
+    double weight;
+    public void display() {
+    	System.out.println("here are the details");
+    }
+}
+class Employee extends Manager {
+    int experience;
+}
+public class Multi {
+	public static void main(String[] args) {
+		Work w=new Work();
+		Manager ma=new Manager();
+		Employee em=new Employee();
+		w.data();
+		ma.display();
+		w.name="Coding";
+		ma.name="riya";
+		ma.salary=90080;
+		ma.age=45;
+		ma.weight=67.88;
+		em.name="priya";
+		em.salary=89000;
+		em.age=47;
+		em.weight=56.9;
+		em.experience=3;
+		System.out.println("name of the work is "+w.name);
+		System.out.println("name of the manager is "+ma.name);
+		System.out.println("salary of the manager is "+ma.salary);
+		System.out.println("age of the manager is " +ma.age);
+		System.out.println("weight of the employee" +ma.weight);
+		System.out.println("name of the employee "+em.name);
+		System.out.println("salary of the employee "+em.salary);
+		System.out.println("age of the employee "+em.age);
+		System.out.println("weight of the employee "+em.weight);
+		System.out.println("experience of the employee " +em.experience);
+		
+	}
+}
+
+Output:-
+Hello Everyone
+here are the details
+name of the work is Coding
+name of the manager is riya
+salary of the manager is 90080
+age of the manager is 45
+weight of the employee67.88
+name of the employee priya
+salary of the employee 89000
+age of the employee 47
+weight of the employee 56.9
+experience of the employee 3
+
+
+
+
